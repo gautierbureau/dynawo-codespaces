@@ -1,0 +1,7 @@
+{
+  "image": "dynawo/dynawo-dev:latest",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": [ "./.devcontainer/postCreateCommand.sh" ]
+}
