@@ -18,6 +18,9 @@ export DYNAWO_BUILD_TYPE=Debug
 
 export DYNAWO_PYTHON_COMMAND=python3
 
+export libiidm_DIR=/opt/dynawo/share/cmake
+export CMAKE_PREFIX_PATH=/opt/dynawo/cmake/:/opt/dynawo/share/cmake
+
 "$DYNAWO_HOME"/util/envDynawo.sh $@' > myEnvDynawo.sh
 chmod +x myEnvDynawo.sh
 #./myEnvDynawo.sh deploy-autocompletion --deploy
@@ -32,8 +35,6 @@ rm -rf share/DYN* share/dynawo-* share/dictionaries_mapping.dic share/solvers.pa
 rm -rf share/cmake/Find* share/cmake/CPUCount.cmake
 rm -rf include/DYD* include/DYN* include/TL* include/JOB* include/PAR* include/CSTR* include/EXTVAR* include/CRV* include/CRT* include/FSV* include/LEQ* include/Modelica*
 rm -rf lib/dynawo_* lib/libdynawo_* lib/libModelica_externalC.so
-export libiidm_DIR=/opt/dynawo/share/cmake
-export CMAKE_PREFIX_PATH=/opt/dynawo/cmake/:/opt/dynawo/share/cmake
 ln -s /opt/dynawo/ /opt/dynawo/adept
 ln -s /opt/dynawo/ /opt/dynawo/xerces-c
 ln -s /opt/dynawo/ /opt/dynawo/suitesparse
