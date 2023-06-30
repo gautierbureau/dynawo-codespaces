@@ -39,3 +39,5 @@ ln -s /opt/dynawo/ /opt/dynawo/adept
 ln -s /opt/dynawo/ /opt/dynawo/xerces-c
 ln -s /opt/dynawo/ /opt/dynawo/suitesparse
 ln -s /opt/dynawo/ /opt/dynawo/sundials
+ln -s /opt/dynawo/ /opt/dynawo/libxml2
+ln -s /opt/dynawo/ /opt/dynawo/libzip
