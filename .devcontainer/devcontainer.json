@@ -1,5 +1,6 @@
 {
   "image": "dynawo/dynawo-dev:latest",
+  "runArgs": ["--env-file",".devcontainer/devcontainer.env"],
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   },
